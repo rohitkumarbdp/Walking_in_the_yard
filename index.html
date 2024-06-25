@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniature-20</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="controls">
+            <div class="rules-column">
+                <h1>Walking in the Yard</h1>
+                <h3>Enter number of vectors</h3>
+                <input type="number" id="vectorCount" min="1" max="10">
+                <button id="playButton">Play Game</button>
+                <button id="solutionButton">Show Solution</button>
+            </div>
+            <div class="vector-list-container">
+                <div id="vectorList" class="vector-list"></div>
+            </div>
+        </div>
+        <div id="canvas-column">
+            <div id="p5Canvas"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
