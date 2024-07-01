@@ -21,6 +21,7 @@ body {
 	width: 100%; /* Adjust the width as needed */
 }
 
+
 .controls {
 	display: flex;
 	flex-direction: column;

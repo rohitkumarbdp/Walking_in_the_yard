@@ -333,10 +333,10 @@ function drawSolutionStep() {
 		);
 
 		// Draw the index near the arrow
-		fill("red");
+		fill("blue");
 		noStroke();
-		textSize(18);
-		textAlign(CENTER, CENTER);
+		textSize(25);
+		textAlign(LEFT, BASELINE);
 		text(
 			animationIndex + 1,
 			(currentX + animX) / 2,
