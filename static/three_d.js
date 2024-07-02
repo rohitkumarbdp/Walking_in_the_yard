@@ -109,7 +109,7 @@ function drawAxes() {
   textSize(16);
   strokeWeight(2);
   line(-500, 0, 0, 500, 0, 0); // Draw a line for the X-axis from (-500, 0, 0) to (500, 0, 0)
-  for (let i = -500; i <= 500; i += 100) {
+  for (let i = -500; i <= 500; i += 50) {
     push();
     translate(i, 0, 0);
     fill(255, 0, 0);
@@ -123,7 +123,7 @@ function drawAxes() {
   textSize(16);
   strokeWeight(2);
   line(0, -500, 0, 0, 500, 0);
-  for (let i = -500; i <= 500; i += 100) {
+  for (let i = -500; i <= 500; i += 50) {
     push();
     translate(0, i, 0);
     fill(255);
@@ -137,7 +137,7 @@ function drawAxes() {
   textSize(16);
   strokeWeight(2);
   line(0, 0, -500, 0, 0, 500);
-  for (let i = -500; i <= 500; i += 100) {
+  for (let i = -500; i <= 500; i += 50) {
     push();
     translate(0, 0, i);
     fill("yellow");
@@ -160,8 +160,8 @@ function drawAxes() {
 
   fill(255);
   textSize(20);
-  text("Y-axis", 30, 250, 0);
-  text("Y-axis", 30, -250, 0);
+  text("Y-axis", 45, 270, 0);
+  text("Y-axis", 45, -270, 0);
 
   fill("yellow");
   textSize(20);
