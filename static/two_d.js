@@ -9,7 +9,7 @@ let generatedVectors = [];
 let prisonerImage;
 
 function preload() {
-	prisonerImage = loadImage("../static/prisoner.jpg"); // Load a prisoner image
+	prisonerImage = loadImage("../static/prisoner.png"); // Load a prisoner image
 }
 
 function setup() {
@@ -34,13 +34,13 @@ function drawYard() {
 	drawDottedCircle(centerX, centerY, yardRadius);
 
 	// Draw the prisoner at the current position
-	image(prisonerImage, currentX - 10, currentY - 10, 20, 20);
+	image(prisonerImage, currentX - 50, currentY - 50, 100, 100);
 
 	// Draw a small filled circle at the center
 	fill("red");
 	noStroke();
 	// strokeWeight(5)
-	ellipse(centerX, centerY, 30);
+	ellipse(centerX, centerY, 15);
 
 	drawUserPath();
 }
