@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miniature-20</title>
+  <link rel="stylesheet" href="../static/three_d.css">
+</head>
+<body>
+  <div id="container">
+    <div id="canvas-container"></div>
+    <div id="text-container">
+      <a href="/" style="color: blue;"><h1>Walking in the Yard</h1></a>
+      <p>There is nothing in the world, human or divine, that is not intrinsically mathematical."
+        - Josiah Willard Gibbs </p>
+        
+      <input type="number" id="vectorCount" placeholder="Enter number of vectors">
+      <button onclick="generateAndDisplayVectors()">Play</button>
+      <button id="solutionButton">Show Solution</button>
+      <div class="vector-list-container">
+        <div id="vectorButtons" class="vector-list"></div>
+
+        <!-- <div id="solutionVectorButtons" class="vector-list"></div> -->
+
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="../static/three_d.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Miniature-20</title>
+		<link rel="stylesheet" href="../static/two_d.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			.vector-box {
+				padding: 10px;
+				margin: 5px;
+				background-color: rgb(41, 145, 83);
+				border: 1px solid #000;
+				cursor: move;
+				display: block;
+			}
+
+			.vector-list {
+				/* border: 2px dashed #ccc; */
+				padding: 10px;
+				/* min-height: fit-content; */
+				max-height: 80%;
+				overflow-y: scroll;
+			}
+			.controls {
+				height: 90vh;
+			}
+			.vector-list-container{
+				height: 95%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="game-container">
+			<div class="controls">
+				<div class="rules-column">
+					<a href="/" style="color: white;"><h1>Walking in the Yard</h1></a>
+					<h3>Enter number of vectors</h3>
+					<input type="number" id="vectorCount" min="1" max="10" />
+					<button id="playButton">Play Game</button>
+					<button id="solutionButton">Show Solution</button>
+					<button id="submitButton">Submit Vectors</button>
+				</div>
+				<div class="vector-list-container">
+					<div id="vectorList" class="vector-list"></div>
+				</div>
+			</div>
+			<div id="canvas-column">
+				<div id="p5Canvas"></div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+		<script src="../static/two_d.js"></script>
+	</body>
+</html>
