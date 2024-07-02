@@ -37,11 +37,11 @@ function drawYard() {
 	image(prisonerImage, currentX - 50, currentY - 50, 100, 100);
 
 	// Draw a small filled circle at the center
-	fill("red");
-	noStroke();
-	// strokeWeight(5)
-	ellipse(centerX, centerY, 15);
-
+	// fill("red");
+	noFill();
+	stroke("red");
+	strokeWeight(3)
+	ellipse(centerX, centerY, 20);
 	drawUserPath();
 }
 
