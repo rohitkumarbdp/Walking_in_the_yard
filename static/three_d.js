@@ -160,8 +160,8 @@ function drawAxes() {
 
   fill(255);
   textSize(20);
-  text("Y-axis", 45, 270, 0);
-  text("Y-axis", 45, -270, 0);
+  text("Y-axis", 40, 270, 0);
+  text("Y-axis", 40, -270, 0);
 
   fill("yellow");
   textSize(20);
@@ -201,7 +201,7 @@ function checkIfVectorExceedsThirdOfRadius(vectors) {
 
 function generateVectors(n) {
   vectors = [];
-  let OnethirdRadius = yardRadius/3 ;
+  let OnethirdRadius = yardRadius / 3;
 
   // Step 1: Generate n vectors within the allowable range
   for (let i = 0; i < n; i++) {
@@ -378,7 +378,7 @@ function drawArrow(base, vec, arrowSize) {
   translate(vec.x - base.x, vec.y - base.y, vec.z - base.z);
 
   // Draw the small sphere as the arrowhead
-  fill(255, 0,0); // You can change the color as needed
+  fill(255, 0, 0); // You can change the color as needed
   noStroke();
   sphere(arrowSize); // Draw the sphere with the given size
 
@@ -463,7 +463,7 @@ function findSolutionPath() {
 
 let animationIndex = 0;
 let animationProgress = 0;
-let animationSpeed = 0.05;
+let animationSpeed = 0.08;
 
 function showSolution() {
   findSolutionPath();
@@ -521,9 +521,30 @@ function drawSolutionStep() {
     // Stop the animation when all arrows are drawn
     // noLoop();
     isAnimating = false;
+    alert("You Win");
   }
 }
 
 document
   .getElementById("solutionButton")
   .addEventListener("click", showSolution);
+
+function updateAnimationSpeed(speed) {
+  console.log("Animation speed changed to:", speed);
+  animationSpeed = speed;
+}
+
+const rangeInput = document.getElementById("animationSpeedRange");
+const numberInput = document.getElementById("animationSpeedNumber");
+
+rangeInput.addEventListener("input", function () {
+  animationSpeed = parseFloat(this.value);
+  numberInput.value = this.value;
+  updateAnimationSpeed(animationSpeed);
+});
+
+numberInput.addEventListener("input", function () {
+  animationSpeed = parseFloat(this.value);
+  rangeInput.value = this.value;
+  updateAnimationSpeed(animationSpeed);
+});

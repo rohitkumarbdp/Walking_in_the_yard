@@ -14,14 +14,16 @@
       <p>There is nothing in the world, human or divine, that is not intrinsically mathematical."
         - Josiah Willard Gibbs </p>
         
-      <input type="number" id="vectorCount" placeholder="Enter number of vectors">
-      <button onclick="generateAndDisplayVectors()">Play</button>
-      <button id="solutionButton">Show Solution</button>
+        <div class="control-row">
+        <input type="number" id="vectorCount" placeholder="Enter number of vectors">
+        <button onclick="generateAndDisplayVectors()">Play</button>
+        <button id="solutionButton">Show Solution</button>
+      </div>
+      <label for="animationSpeed">Change Animation Speed</label>
+      <input type="range" id="animationSpeedRange" min="0.01" max="3" step="0.02" value="0.08">
+      <input type="number" id ="animationSpeedNumber" min ="0.01" max="3" step = "0.02" value="0.08" placeholder="Change Animation Speed">
       <div class="vector-list-container">
         <div id="vectorButtons" class="vector-list"></div>
-
-        <!-- <div id="solutionVectorButtons" class="vector-list"></div> -->
-
       </div>
     </div>
   </div>
