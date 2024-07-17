@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniature-20</title>
+    <link rel="stylesheet" href="../static/formal_proof.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <h1>A Layman's Guide to the Theorem</h1>
+    
+    
+    <div class="proof">
+        <div class="buttons">
+            <button onclick="window.open('https://www.ams.org/books/stml/053/stml053-endmatter.pdf', '_blank');">Read 33 - Miniatures Book</button>
+            <button onclick="window.location.href='/formal-proof';">Formal Proof</button>
+            <button onclick="window.location.href='/';">Play Game</button>
+        </div>
+        
+        <h3>Understanding the Problem</h3>
+        <p>You have a set \( M \) consisting of \( n \) vectors in a \( d \)-dimensional space. Each vector has a length of at most 1. When you add all these vectors together, they sum to zero.</p>
+        <img src="../static/proof_circle.jpeg" alt="" style="width:70%;height:70%;margin-left: 10%;">
+        <h3>Goal</h3>
+        <p>You want to arrange these vectors in a sequence (\( v_1, v_2, ..., v_n \)) so that as you add them up one by one, the length of the resulting sum never exceeds \( d \).</p>
+
+        <h3>Example for Better Understanding</h3>
+        <p>Imagine walking in a yard, and each vector represents a step you take. The goal is to ensure that at no point does your total distance from the start exceed a certain limit, which is \( d \) in this case.</p>
+
+        <h3>The Theorem</h3>
+        <p>The theorem states that it is always possible to find such an order for any set \( M \).</p>
+
+        <h3>Proof Strategy</h3>
+        <p><strong>Key Concept:</strong> A "good" set of vectors is one where you can find a special combination of the vectors that sums to zero and meets certain criteria. If a set is "good," its total length when summed up is at most \( d \).</p>
+
+        <p><strong>Main Idea:</strong> If you have more than \( d \) vectors in a "good" set, you can always remove one vector and still have a "good" set. This allows you to reduce the problem step by step.</p>
+
+        <h3>Detailed Steps</h3>
+        <p><strong>Lemma:</strong> If you have a system of linear equations with a solution in the range [0, 1], you can find another solution where most variables are either 0 or 1.</p>
+
+        <p><strong>Inductive Proof:</strong></p>
+        <ul>
+            <li>Start with all vectors in \( M \), which is a "good" set.</li>
+            <li>Remove vectors one by one while maintaining the "good" property.</li>
+            <li>Continue this until only \( d \) vectors are left. This gives you the required order.</li>
+        </ul>
+
+        <h3>Why It Works</h3>
+        <p>By carefully choosing which vector to remove, you ensure that the sum of the vectors at any stage does not exceed \( d \).</p>
+
+        <h3>Conclusion</h3>
+        <p>This method guarantees that for any finite set of vectors, you can find a sequence that keeps the total length of summed vectors within a certain limit at every step.</p>
+    </div>
+
+</body>
+</html>

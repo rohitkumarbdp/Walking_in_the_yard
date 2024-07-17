@@ -12,6 +12,13 @@ def twoDimention():
 def threeDimention():
     return render_template('three_d.html')
 
+@app.route('/formal-proof')
+def formalProof():
+    return render_template("formal_proof.html")
+@app.route('/layman-proof')
+def laymanProof():
+    return render_template("layman_proof.html")
+
 
 if __name__ == '__main__':
     app.run(debug=True, port= 5000)

@@ -4,51 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Walking in the Yard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #002e19;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-            background-color: #c2ffe8;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 90%;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        a {
-            display: block;
-            color: #007bff;
-            text-decoration: none;
-            padding: 10px 0;
-            transition: background-color 0.3s ease;
-        }
-        a:hover {
-            background-color: #006b1e;
-            color: #0d4500;
-        }
-    </style>
+    <link rel="stylesheet" href="../static/index.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="container">
+        <h1>Walking in the Yard</h1>
         
-        <div class="container">
-            <h1>Walking in the Yard</h1>
-            <a href="/2d">Play in Two Dimensions</a>
-            <a href="/3d">Play in Three Dimensions</a>
+        <div class="btn-container">
+            <a href="https://www.ams.org/books/stml/053/stml053-endmatter.pdf" target="_blank">33-Miniature Book</a>
+            <a href="/layman-proof">Layman's Explanation</a>
+            <a href="/formal-proof">Formal Proof</a>
+        </div>
+
+        <div class="card">
+                <h2>Theorem</h2>
+                <p>Let \( M \) be an arbitrary set of \( n \) vectors in \( \mathbb{R}^d \) such that the length of each vector \( v \in M \) is at most 1
+                     (in Euclidean terms), and the sum of all vectors in \( M \) equals 0. Then, it is possible to arrange all vectors of \( M \) into a sequence \((v_1, v_2, \ldots, v_n)\) 
+                     such that the length of the sum of the first \( k \) vectors \((v_1 + v_2 + \ldots + v_k)\) is at most \( d \) for every \( k = 1, 2, \ldots, n\).
+                    </p>
+
+        </div>
+
+        <div class="btn-container">
+            <a href="/2d">Play Game in 2D</a>
+            <a href="/3d">Play Game in 3D</a>
         </div>
     </div>
 </body>

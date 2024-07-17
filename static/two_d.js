@@ -6,11 +6,11 @@ let moveIndex = 0;
 let userPath = [];
 let solutionPath = [];
 let generatedVectors = [];
-let prisonerImage;
+// let prisonerImage;
 
-function preload() {
-  prisonerImage = loadImage("../static/prisoner.png"); // Load a prisoner image
-}
+// function preload() {
+//   prisonerImage = loadImage("../static/prisoner.png"); // Load a prisoner image
+// }
 
 function setup() {
   let canvas = createCanvas(900, 700);
@@ -34,7 +34,7 @@ function drawYard() {
   drawDottedCircle(centerX, centerY, yardRadius);
 
   // Draw the prisoner at the current position
-  image(prisonerImage, currentX - 50, currentY - 50, 100, 100);
+  // image(prisonerImage, currentX - 50, currentY - 50, 100, 100);
 
   // Draw a small filled circle at the center
   // fill("red");

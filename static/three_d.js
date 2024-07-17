@@ -521,7 +521,7 @@ function drawSolutionStep() {
     // Stop the animation when all arrows are drawn
     // noLoop();
     isAnimating = false;
-    alert("You Win");
+    alert("Solution Path is Drawn");
   }
 }
 
