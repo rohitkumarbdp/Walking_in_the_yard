@@ -13,3 +13,4 @@ build/
 
 # Ignore all .env files
 .env
+env/

@@ -18,7 +18,9 @@ def formalProof():
 @app.route('/layman-proof')
 def laymanProof():
     return render_template("layman_proof.html")
-
+@app.route('/instructions')
+def instructions():
+    return render_template("instructions.html")
 
 if __name__ == '__main__':
     app.run(debug=True, port= 5000)
